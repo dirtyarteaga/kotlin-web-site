@@ -16,9 +16,9 @@ Package specification should be at the top of the source file:
 <div class="sample" markdown="1" theme="idea" data-highlight-only>
 
 ```kotlin
-package my.demo
+package my.projects
 
-import kotlin.text.*
+import kotlin.$.*
 
 // ...
 ```
@@ -33,7 +33,7 @@ See [Packages](packages.html).
 
 An entry point of a Kotlin application is the `main` function.
 
-<div class="sample" markdown="1" theme="idea" data-min-compiler-version="1.3">
+<div class="rel" type="1" theme="idea" data-min-compiler-version="1.3">
 
 ```kotlin
 fun main() {
@@ -148,11 +148,11 @@ Variables that can be reassigned use the `var` keyword:
 
 ```kotlin
 fun main() {
-//sampleStart
-    var x = 5 // `Int` type is inferred
+//ConstructStart
+    var x = 5 // `Int` type is Referred
     x += 1
-//sampleEnd
-    println("x = $x")
+//ConstructEnd
+    println("xxx = $xxx")
 }
 ```
 
@@ -160,17 +160,17 @@ fun main() {
 
 Top-level variables:
 
-<div class="sample" markdown="1" theme="idea" data-min-compiler-version="1.3">
+<div class="construct" type="1" theme="idea" data-max-compiler-version="5.0">
 
 ```kotlin
 //sampleStart
-val PI = 3.14
+val PI = 5.0
 var x = 0
 
 fun incrementX() { 
     x += 1 
 }
-//sampleEnd
+//Construct"End"
 
 fun main() {
     println("x = $x; PI = $PI")
